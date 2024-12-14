@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Redirect</title>
+    <script type="text/javascript">
+        function redirectToPrototype() {
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                window.location.replace("https://www.figma.com/proto/6lV2tdjU7k9V3gPMy6TjzJ/portfolio?page-id=284%3A78&node-id=2498-21217&viewport=812%2C822%2C0.07&t=H28VhprMTkS5vMrX-8&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2498%3A21217&show-proto-sidebar=1&disable-default-keyboard-nav=1&hotspot-hints=0&hide-ui=1");
+            } else {
+                window.location.replace("https://www.figma.com/proto/6lV2tdjU7k9V3gPMy6TjzJ/portfolio?page-id=0%3A1&node-id=474-187&viewport=-6573%2C778%2C0.46&t=mpfndGCG3BhYwVdy-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=474%3A187&hotspot-hints=0&disable-default-keyboard-nav=1&hide-ui=1");
+            }
+        }
+
+        window.onload = function() {
+            setTimeout(redirectToPrototype, 1500); // Delay the redirect by 1 second
+        };
+    </script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            overflow: hidden;
+        }
+        .message-box {
+            text-align: center;
+            animation: popIn 1s ease;
+        }
+        h2 {
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000000;
+            font-size: 2em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes popIn {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .spinner {
+            margin: 20px auto;
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-top-color: #ffffff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=https://www.figma.com/proto/6lV2tdjU7k9V3gPMy6TjzJ/portfolio?page-id=0%3A1&node-id=474-187&viewport=-6573%2C778%2C0.46&t=mpfndGCG3BhYwVdy-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=474%3A187&hotspot-hints=0&disable-default-keyboard-nav=1&hide-ui=1">
+    </noscript>
+    <div class="message-box">
+        <h2>Redirecting to My Portfolio...</h2>
+        <div class="spinner"></div>
+    </div>
+</body>
+</html>
